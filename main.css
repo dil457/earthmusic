@@ -53,6 +53,7 @@ h1.logo div {
 footer {
     color: #fafafa;
     border-radius: 20px;
+    margin-top: 100px;
     }
 
 .social-links {
@@ -96,21 +97,32 @@ footer {
 /*--------------------------------------------form*/
 
 .index-form{
-    width:100%;
     background-color: #f2f2f2;
-    padding: 20px 20px 20px 20px;
-    margin: 200px;
-    
+}
+
+form label {
+  color: whitesmoke;
+}
+
+form .btn {
+  background: red;
+  color: white;
+  border: none;
+}
+.address{
+  color: white;
+}
+
+.glyphicon-globe{
+  padding-right: 10px;
+}
+.glyphicon-earphone{
+  padding-right: 10px;
 }
 
 /*--------------------------------------------header*/ 
 
 header{
-
-  float:right;
-  margin-top: 25px;
-  margin-right: 25px;
-  margin-bottom: 30px;
 }
 
 #intro {
@@ -121,6 +133,13 @@ h2.intro{
   margin-top: 60px;
   color: white;
   font-size: 52px;
+}
+
+h2.intro-title{
+  margin-top: 60px;
+  color: white;
+  font-size: 52px;
+  margin-bottom: 30px;
 }
 
 h2.intro div {
@@ -264,11 +283,6 @@ nav.main-nav ul li a:hover {
   margin-top: 200px;
 }
 
-.glyphicon-equalizer{
-    padding-left: 19px;
-    
-}
-
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -283,16 +297,28 @@ nav.main-nav ul li a:hover {
 
   nav.main-nav ul {
   list-style-type: inline;
+  position: absolute;
   top: 10px;
-  left: 10px;
+  left: 0px;
+  padding: 0 10px;
   }
 
   nav.main-nav ul li {
     display: inline-block;
   }
 
+  nav.main-nav ul li a {
+  padding: 5px 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav.main-nav ul li a:hover {
+  padding: 5px 5px;
+}
+
   h1.logo {
-    top: 20px;
+    position: relative;
+    top: 60px;
     left: 20px;
   }
 }
